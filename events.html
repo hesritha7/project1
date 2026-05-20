@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Events</title>
+<link rel="stylesheet" href="style.css">
+<script src="script.js" defer></script>
+</head>
+<body>
+<header>
+<h1>TechNova 2026</h1>
+
+<nav>
+<a href="index.html">Home</a>
+<a href="events.html">Projects</a>
+<a href="feedback.html">Feedback</a>
+</nav>
+
+</header>
+<section class="container" id="projects">
+
+<h2 align="center">Project Categories</h2>
+
+<table>
+
+<tr>
+<th>ID</th>
+<th>Category</th>
+<th>Domain</th>
+<th>Date</th>
+<th>Venue</th>
+<th>Fee</th>
+<th>Status</th>
+</tr>
+
+<tr>
+<td>101</td>
+<td>AI</td>
+<td>Machine Learning</td>
+<td>20/05/2026</td>
+<td>ValmikiHall </td>
+<td>500</td>
+<td>Open</td>
+</tr>
+
+<tr>
+<td>102</td>
+<td>Web Development</td>
+<td>Frontend</td>
+<td>21/05/2026</td>
+<td>Sudhamani Hall </td>
+<td>400</td>
+<td>Open</td>
+</tr>
+
+<tr>
+<td>103</td>
+<td>Cyber Security</td>
+<td>Security</td>
+<td>22/05/2026</td>
+<td> KrishnaHall </td>
+<td>450</td>
+<td>Closed</td>
+</tr>
+
+<tr>
+<td>104</td>
+<td>IoT</td>
+<td>Embedded</td>
+<td>23/05/2026</td>
+<td> Amrita Hall </td>
+<td>300</td>
+<td>Open</td>
+</tr>
+
+<tr>
+<td>105</td>
+<td>Cloud</td>
+<td>AWS</td>
+<td>24/05/2026</td>
+<td>Rama Hall </td>
+<td>600</td>
+<td>Closed</td>
+</tr>
+
+</table>
+
+</section>
+<section class="container">
+
+<h2 align="center">Project Registration Form</h2>
+<form id="projectForm">
+STUDENT NAME:
+<input type="text" id="name"><br>
+
+REGISTER NUMBER:
+<input type="text" id="regno"><br>
+
+EMAIL:
+<input type="email" id="email"><br>
+
+MOBILE NUMBER:
+<input type="text" id="mobile"><br>
+
+DEPARTMENT:
+<input type="text" id="dept"><br>
+
+YEAR OF STUDY:
+<select id="year">
+<option value="">Select</option>
+<option>1</option>
+<option>2</option>
+<option>3</option>
+<option>4</option>
+</select><br>
+
+PROJECT CATEGORY:
+<select id="category">
+<option value="">Select Category</option>
+<option>AI</option>
+<option>Web Development</option>
+<option>Cyber Security</option>
+<option>IoT</option>
+<option>Cloud</option>
+</select><br>
+
+PROJECT TITLE:
+<input type="text" id="title"><br>
+
+TEAM NAME:
+<input type="text" id="team"><br>
+
+NUMBER OF TEAM MEMBERS:
+<input type="number" id="members"><br>
+
+<button type="button" onclick="registerProject()">Register Project</button><br>
+
+</form>
+
+<div id="message" align="center"></div>
+
+</section>
+
+<section class="container">
+
+<h2 align="center">Search Registered Projects</h2>
+
+<input type="text" id="searchName" placeholder="Search Student Name"><br>
+
+<select id="searchCategory">
+<option value="">All Categories</option>
+<option>AI</option>
+<option>Web Development</option>
+<option>Cyber Security</option>
+<option>IoT</option>
+<option>Cloud</option>
+</select><br>
+
+<button onclick="searchProjects()">Search</button><br>
+
+<button onclick="resetSearch()">Reset</button><br>
+
+<table>
+<thead>
+<tr>
+<th>Register No</th>
+<th>Student Name</th>
+<th>Category</th>
+<th>Project Title</th>
+<th>Team Name</th>
+<th>Members</th>
+<th>Status</th>
+</tr>
+</thead>
+<tbody id="tableBody">
+</tbody>
+
+</table>
+
+</section>
+
+<footer>
+<p>Department of CSE</p>
+<p>Email :blr.amrita.edu@gmail.com</p>
+</footer>
+
+</body>
+</html>

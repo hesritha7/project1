@@ -1,0 +1,8 @@
+{
+"name":"group_1_cse_c_hackathon",
+"version":"1.0.0",
+"main":"main.js",
+"script":{
+"start":"electron .",
+}
+}

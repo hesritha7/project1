@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Feedback</title>
+<link rel="stylesheet" href="style.css">
+<script src="script.js" defer></script>
+</head>
+<body>
+
+<header>
+<h1>TechNova 2026</h1>
+
+<nav>
+<a href="index.html">Home</a>
+<a href="events.html">Projects</a>
+<a href="feedback.html">Feedback</a>
+</nav>
+
+</header>
+<section class="container" id="feedback">
+
+<h2 align="center">Feedback Form</h2>
+
+<form id="feedbackForm">
+
+STUDENT NAME:
+<input type="text" id="fname"><br>
+
+REGISTER NUMBER:
+<input type="text" id="freg"><br>
+
+PROJECT CATEGORY:
+<select id="fcategory">
+<option value="">Select</option>
+<option>AI</option>
+<option>Web Development</option>
+<option>Cyber Security</option>
+<option>IoT</option>
+<option>Cloud</option>
+</select><br>
+
+RATING:
+<select id="rating">
+<option value="">Select</option>
+<option>1</option>
+<option>2</option>
+<option>3</option>
+<option>4</option>
+<option>5</option>
+</select><br>
+
+COMMENTS:
+<textarea id="comments" rows="4"></textarea>
+
+<button type="button" onclick="submitFeedback()">Submit Feedback</button><br>
+
+</form>
+
+<div id="feedbackMessage" align="center"></div>
+</section>
+
+<footer>
+<p>Department of CSE</p>
+<p>Email :blr.amrita.edu@gmail.com</p>
+</footer>
+
+</body>
+</html>

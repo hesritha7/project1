@@ -1,0 +1,113 @@
+body{
+font-family:Arial;
+background:white;
+margin:0;
+background-image:url("image2.webp");
+background-size:cover;
+background-position:center;
+}
+header{
+background:grey;
+color:white;
+padding:20px;
+text-align:center;
+}
+nav a{
+color:white;
+text-decoration:none;
+margin:15px;
+font-size:18px;
+}
+
+.banner{
+background:lightblue;
+color:white;
+padding:40px;
+text-align:center;
+}
+
+.container{
+background:white;
+width:70%;
+margin:20px auto;
+padding:10px;
+border-radius:10px;
+}
+
+form{
+width:60%;
+margin:auto;
+}
+
+table{
+width:100%;
+border-collapse:collapse;
+margin-top:10px;
+}
+
+table,th,td{
+border:1px solid black;
+}
+
+th,td{
+padding:8px;
+text-align:center;
+}
+
+input,select,textarea{
+width:100%;
+padding:8px;
+margin:2px;
+border:1px solid gray;
+border-radius:5px;
+}
+
+button{
+background:grey;
+color:black;
+padding:10px;
+border-radius:5px;
+}
+
+button:hover{
+background:teal;
+}
+
+.success{
+color:green;
+}
+
+footer{
+background:black;
+color:white;
+text-align:center;
+padding:10px;
+margin-top:20px;
+}
+
+@media(max-width:768px){
+
+.container{
+width:90%;
+}
+
+form{
+width:90%;
+}
+
+nav a{
+display:block;
+margin:10px;
+}
+
+table{
+font-size:12px;
+}
+
+img {
+max-width: 90%; 
+max-height: 90%;
+border-radius: 8px; 
+align:"center";
+    }
+}
